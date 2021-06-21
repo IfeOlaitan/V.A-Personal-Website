@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Dynalight&family=Proza+Libre:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  color: #16161D;
+}
+
+body {
+  background-color: tomato;
+  font-family: "Proza Libre", sans-serif;
+}
+
+.header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background-color: rgba(31, 78, 95, 0.6);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 8rem;
+}
+.nav .logo img {
+  width: 60%;
+}
+
+.social-icons {
+  font-size: 1.8rem;
+  margin-left: 8rem;
+}
+.social-icons i {
+  color: #ffffff;
+  margin-right: 0.7rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.social-icons i:hover {
+  filter: brightness(0.8);
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list__item {
+  list-style: none;
+  margin-right: 5rem;
+}
+.list__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  transition: all 0.2s ease-in-out;
+}
+.list__link:hover {
+  filter: brightness(0.8);
+}
+
+.hero {
+  background-image: linear-gradient(rgba(121, 168, 169, 0.1), rgba(121, 168, 169, 0.1)), url(/dist/img/hero-bg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.hero-box__hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hero-box__heading {
+  font-size: 8rem;
+  color: #ffffff;
+  line-height: 1;
+}
+.hero-box .spiral {
+  width: 60%;
+}
+
+.hello-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hello-box p {
+  color: #ffffff;
+  font-family: "Dynalight", cursive;
+  font-size: 7rem;
+}
+.hello-box .hello {
+  width: 30%;
+}/*# sourceMappingURL=main.css.map */

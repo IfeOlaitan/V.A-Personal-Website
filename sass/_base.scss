@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Proza+Libre:wght@400;500;600;700&display=swap');
+
+$primary-color: #1F4E5F;
+$secondary-color: #79A8A9;
+$black: #16161D;
+$white: #ffffff;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    color: $black;
+}
+
+body {
+    background-color: tomato;
+    font-family: 'Proza Libre', sans-serif;
+}
