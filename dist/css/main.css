@@ -13,15 +13,15 @@ html {
 }
 
 body {
-  background-color: tomato;
   font-family: "Proza Libre", sans-serif;
+  line-height: 1.5;
 }
 
 .header {
   position: fixed;
   z-index: 5;
   width: 100%;
-  background-color: rgba(31, 78, 95, 0.6);
+  background-color: #1F4E5F;
 }
 
 .nav {
@@ -113,4 +113,143 @@ body {
 }
 .hello-box .hello {
   width: 30%;
+}
+
+main {
+  margin: 0 8rem;
+}
+
+.section-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem 0;
+  background-color: #F4F7F7;
+}
+.section-about__text {
+  padding: 0.5em 1em;
+  width: 60%;
+}
+.section-about__text p {
+  font-size: 1.6rem;
+  color: #16161D;
+}
+.section-about__heading {
+  font-size: 3rem;
+  color: #1F4E5F;
+  margin-bottom: 2rem;
+}
+.section-about__img {
+  width: 30%;
+}
+.section-about__img img {
+  width: 100%;
+}
+
+.section-book {
+  margin: 8rem 0;
+}
+.section-book__head {
+  background-color: #1F4E5F;
+}
+.section-book__heading {
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 0.5em 1em;
+}
+.section-book__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-book__text {
+  width: 50%;
+}
+.section-book__text h5 {
+  font-size: 2.5rem;
+  color: #1F4E5F;
+  padding: 1.2em 0;
+}
+.section-book__text .paragraph {
+  font-size: 1.6rem;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #1F4E5F;
+}
+.section-book__text .price {
+  font-size: 2.3rem;
+  color: #1F4E5F;
+  font-weight: 700;
+  padding-top: 1em;
+  padding-bottom: 1.3em;
+}
+.section-book__text .small {
+  font-size: 1.8rem;
+  color: #1F4E5F;
+  padding-bottom: 0.25em;
+}
+.section-book__book {
+  width: 45%;
+}
+.section-book__book img {
+  width: 100%;
+}
+
+.buttons {
+  margin: 1.4rem 0;
+  display: flex;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  background: #39537B;
+  color: #ffffff;
+  padding: 0.8em 1.25em;
+  border-radius: 8px;
+  margin-right: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  filter: brightness(0.8);
+}
+
+.book-reviews h4 {
+  font-size: 3rem;
+  color: #1F4E5F;
+  margin-bottom: 0.5rem;
+}
+
+.section-reviews {
+  background: #79A8A9;
+  height: 30vw;
+  position: relative;
+}
+
+.review {
+  background: #ffffff;
+  width: 75%;
+  padding: 5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.review__photo {
+  width: 20%;
+  border-radius: 50%;
+}
+.review__text-box {
+  width: 65%;
+}
+.review__text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.review__user-name {
+  font-size: 1.8rem;
+  color: #1F4E5F;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

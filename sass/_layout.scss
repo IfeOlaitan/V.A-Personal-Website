@@ -2,7 +2,7 @@
     position: fixed;
     z-index: 5;
     width: 100%;
-    background-color: rgba($primary-color, .6);
+    background-color: $primary-color;
 }
 
 .nav {
@@ -107,5 +107,170 @@
 
     .hello {
         width: 30%;
+    }
+}
+
+main {
+    margin: 0 8rem;
+}
+
+.section-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //flex-wrap: wrap;
+    margin: 8rem 0;
+    background-color: #F4F7F7;
+
+    &__text {
+        padding: .5em 1em;
+        width: 60%;
+        // background-color: #F4F7F7;
+
+        p {
+            font-size: 1.6rem;
+            color: $black;
+        }
+    }
+
+    &__heading {
+        font-size: 3rem;
+        color: $primary-color;
+        margin-bottom: 2rem;
+    }
+
+    &__img {
+        width: 30%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.section-book {
+    margin: 8rem 0;
+
+    &__head {
+        background-color: $primary-color;
+    }
+
+    &__heading {
+        font-size: 3rem;
+        color: $white;
+        //margin-bottom: 2rem;
+        padding: .5em 1em;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        width: 50%;
+
+        h5 {
+            font-size: 2.5rem;
+            color: $primary-color;
+            padding: 1.2em 0;
+        }
+
+        .paragraph {
+            font-size: 1.6rem;
+            padding-bottom: 1em;
+            border-bottom: 2px solid $primary-color;
+        }
+
+        .price {
+            font-size: 2.3rem;
+            color: $primary-color;
+            font-weight: 700;
+            padding-top: 1em;
+            padding-bottom: 1.3em;
+        }
+
+        .small {
+            font-size: 1.8rem;
+            color: $primary-color;
+            padding-bottom: .25em;
+        }
+    }
+
+    &__book {
+        width: 45%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.buttons {
+    margin: 1.4rem 0;
+    display: flex;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    background: #39537B;
+    color: $white;
+    padding: .8em 1.25em;
+    border-radius: 8px;
+    margin-right: 1rem;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        filter: brightness(.8);
+    }
+}
+
+.book-reviews {
+    h4 {
+        font-size: 3rem;
+        color: $primary-color;
+        margin-bottom: .5rem;
+    }
+}
+
+.section-reviews {
+    background: $secondary-color;
+    height: 30vw;
+    position: relative;
+}
+
+.review {
+    background: $white; 
+    width: 75%;
+    padding: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__photo {
+        width: 20%;
+        border-radius: 50%;
+    }
+
+    &__text-box {
+        width: 65%;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__user-name {
+        font-size: 1.8rem;
+        color: $primary-color;
+        font-weight: 600;
     }
 }
