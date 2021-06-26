@@ -45,7 +45,7 @@ header .container {
 }
 
 .hero {
-  background-image: url(/dist/img/back-small.svg);
+  background-image: url(dist/img/back-small.svg);
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -64,6 +64,7 @@ header .container {
 }
 .hero .hero-img {
   width: 70%;
+  max-width: 30rem;
   position: relative;
 }
 .hero .hero-img::before {
