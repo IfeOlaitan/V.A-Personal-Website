@@ -47,10 +47,9 @@ header .container {
 .hero {
   background-image: url(../img/back-small.png);
   background-repeat: no-repeat;
-  height: 100vh;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   position: relative;
   display: flex;
   justify-content: center;
