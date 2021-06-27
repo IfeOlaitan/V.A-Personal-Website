@@ -109,4 +109,41 @@ header .container {
   margin: 2.2rem 0;
   border-radius: 0.5em;
   position: relative;
+}
+
+.about-section {
+  margin: 3rem auto;
+}
+.about-section .container {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-section .left-col .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+.about-section .left-col .head img {
+  width: 2.6rem;
+  margin-right: 1rem;
+}
+.about-section .left-col .head h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.about-section .left-col .paragraph {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+.about-section .right-col {
+  max-width: 35rem;
+}
+.about-section .right-col img {
+  width: 100%;
+  margin-top: 2rem;
 }/*# sourceMappingURL=main.css.map */
