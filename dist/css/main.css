@@ -216,12 +216,14 @@ header .container {
 
 .book-review {
   margin: 4rem 0;
+  padding: 3em 0 0.8em 0;
+  background: #F2F1FA;
 }
 .book-review .container {
   margin: 0 2rem;
 }
 .book-review h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #17152A;
   text-align: center;
