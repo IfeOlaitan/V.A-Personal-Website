@@ -151,6 +151,9 @@ header .container {
   -moz-box-shadow: -5px 7px 56px -28px rgba(0, 0, 0, 0.65);
 }
 
+.book-section {
+  margin-bottom: 3rem;
+}
 .book-section .head {
   background: #17152A;
   margin-bottom: 2rem;
@@ -209,4 +212,48 @@ header .container {
   width: 100%;
   max-width: 70rem;
   margin-bottom: 2rem;
+}
+
+.book-review {
+  margin: 4rem 0;
+}
+.book-review .container {
+  margin: 0 2rem;
+}
+.book-review h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #17152A;
+  text-align: center;
+  margin-bottom: 5.5rem;
+}
+.book-review li {
+  background: #17152A;
+  list-style: none;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 1.2em;
+  margin: 0 auto 6em auto;
+  box-shadow: -8px 18px 39px -5px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: -8px 18px 39px -5px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -8px 18px 39px -5px rgba(0, 0, 0, 0.37);
+}
+.book-review li img {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+.book-review li blockquote {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.book-review li i {
+  color: #C5C2E9;
+}
+.book-review li p {
+  font-size: 1.2rem;
+  color: #C5C2E9;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

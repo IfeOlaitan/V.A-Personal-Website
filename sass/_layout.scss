@@ -160,6 +160,7 @@ header {
 
 //Book Section
 .book-section {
+    margin-bottom: 3rem;
     
     .head {
         background: $primary-color;
@@ -239,4 +240,59 @@ header {
             margin-bottom: 2rem;
         }
     }
+}
+
+//Book Review
+.book-review {
+    margin: 4rem 0;
+
+    .container {
+        margin: 0 2rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $primary-color;
+        text-align: center;
+        margin-bottom: 5.5rem;
+    }
+
+    li {
+        background: $primary-color;
+        list-style: none;
+        text-align: center;
+        color: $white;
+        border-radius: 12px;
+        padding: 1.2em;
+        margin: 0 auto 6em auto;
+        box-shadow: -8px 18px 39px -5px rgba(0,0,0,0.37);
+        -webkit-box-shadow: -8px 18px 39px -5px rgba(0,0,0,0.37);
+        -moz-box-shadow: -8px 18px 39px -5px rgba(0,0,0,0.37);
+
+
+        img {
+            width: 7em;
+            height: 7em;
+            border-radius: 50%;
+            margin-top: -4.5em;
+        }
+
+        blockquote {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        i {
+            color: #C5C2E9;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #C5C2E9;
+            margin-bottom: .5rem;
+        }
+    }
+
+
 }
