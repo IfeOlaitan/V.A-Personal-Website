@@ -80,6 +80,7 @@ header .container {
 }
 .hero .hero-box .hello {
   display: flex;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 .hero .hero-box .hello p {
