@@ -179,7 +179,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .left-col {
@@ -201,7 +201,7 @@ header {
         }
 
         .price {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: 600;
             margin-bottom: 1.3rem;
         }
@@ -236,7 +236,7 @@ header {
         img {
             width: 100%;
             max-width: 70rem;
-            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
     }
 }

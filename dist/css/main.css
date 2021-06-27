@@ -167,7 +167,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 .book-section .left-col h5 {
   font-size: 1.65rem;
@@ -183,7 +183,7 @@ header .container {
   margin-bottom: 1.2rem;
 }
 .book-section .left-col .price {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 600;
   margin-bottom: 1.3rem;
 }
@@ -208,5 +208,5 @@ header .container {
 .book-section .right-col img {
   width: 100%;
   max-width: 70rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */
