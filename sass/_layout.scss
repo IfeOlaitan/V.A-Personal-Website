@@ -141,7 +141,6 @@ header {
 
         .paragraph{
             font-size: 1.4rem;
-            //max-width: 45rem;
             text-align: justify;
         }
     }
@@ -151,6 +150,85 @@ header {
 
         img {
             width: 100%;
+            margin-top: 2rem;
+            box-shadow: -5px 7px 56px -28px rgba(0,0,0,0.65);
+            -webkit-box-shadow: -5px 7px 56px -28px rgba(0,0,0,0.65);
+            -moz-box-shadow: -5px 7px 56px -28px rgba(0,0,0,0.65);
+        }
+    }
+}
+
+//Book Section
+.book-section {
+    
+    .head {
+        background: $primary-color;
+        margin-bottom: 2rem;
+
+        h4 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: $white;
+            padding: 1.8rem 2rem;
+            text-align: center;
+        }
+    }
+
+    .container {
+        margin: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .left-col {
+        //width: 45%;
+
+        h5 {
+            font-size: 1.65rem;
+            color: $primary-color;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .paragraph{
+            font-size: 1.4rem;
+            text-align: justify;
+            border-bottom: 2px solid #FFA400;
+            padding-bottom: 1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.3rem;
+        }
+
+        .buy {
+
+            p {
+                font-size: 1.55rem;
+                color: $primary-color;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.4rem;
+                font-weight: 600;
+                color: blue;
+                display: inline-block;
+                padding-right: .3rem;
+            }
+        }
+    }
+
+    .right-col {
+
+        img {
+            width: 100%;
+            max-width: 70rem;
             margin-top: 2rem;
         }
     }
