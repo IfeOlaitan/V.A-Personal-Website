@@ -190,14 +190,20 @@ header .container {
 .book-section .left-col .buy p {
   font-size: 1.55rem;
   color: #17152A;
+  margin-bottom: 0.5rem;
 }
 .book-section .left-col .buy a {
   text-decoration: none;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 300;
   color: blue;
   display: inline-block;
-  padding-right: 0.3rem;
+  background: #39537B;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  border-radius: 5px;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 .book-section .right-col img {
   width: 100%;

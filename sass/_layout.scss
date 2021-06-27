@@ -211,15 +211,22 @@ header {
             p {
                 font-size: 1.55rem;
                 color: $primary-color;
+                margin-bottom: .5rem;
+                //&#8594;
             }
 
             a {
                 text-decoration: none;
                 font-size: 1.4rem;
-                font-weight: 600;
+                font-weight: 300;
                 color: blue;
                 display: inline-block;
-                padding-right: .3rem;
+                background: #39537B;
+                color: $white;
+                padding: .2em .6em;
+                border-radius: 5px;
+                margin-right: .3rem;
+                margin-bottom: .3rem;
             }
         }
     }
