@@ -311,7 +311,7 @@ header {
 
         .left-col {
             background: #F1F8F8;
-            padding: 8em 4em;
+            padding: 6em 4em;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -368,7 +368,7 @@ header {
 
         .socials {
             font-size: 1.8rem;
-            margin: 1.5rem;
+            margin: 1.8rem;
 
             i {
                 padding: .3em;
@@ -381,8 +381,9 @@ header {
         }
 
         .dev {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin-bottom: .8rem;
+            color: #C5C2E9;
         }
     }
 }

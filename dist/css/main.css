@@ -272,7 +272,7 @@ header .container {
 }
 .contact-section .container .left-col {
   background: #F1F8F8;
-  padding: 8em 4em;
+  padding: 6em 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,7 +320,7 @@ header .container {
 }
 .footer .container .socials {
   font-size: 1.8rem;
-  margin: 1.5rem;
+  margin: 1.8rem;
 }
 .footer .container .socials i {
   padding: 0.3em;
@@ -330,6 +330,7 @@ header .container {
   margin-bottom: 0.5rem;
 }
 .footer .container .dev {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 0.8rem;
+  color: #C5C2E9;
 }/*# sourceMappingURL=main.css.map */
