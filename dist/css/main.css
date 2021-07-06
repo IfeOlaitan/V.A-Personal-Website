@@ -223,7 +223,7 @@ header .container {
   margin: 0 2rem;
 }
 .book-review h4 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 600;
   color: #17152A;
   text-align: center;
@@ -258,4 +258,46 @@ header .container {
   font-size: 1.2rem;
   color: #C5C2E9;
   margin-bottom: 0.5rem;
+}
+
+.contact-section .container {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .container .left-col {
+  background: #F1F8F8;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .container .left-col h1 {
+  color: #1F4E5F;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.contact-section .container .left-col h1 img {
+  width: 2rem;
+}
+.contact-section .container .left-col a {
+  background: #39537B;
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 0.6em 0.9em;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.contact-section .container .right-col {
+  background: #2F2B54;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .container .right-col img {
+  width: 70%;
+  max-width: 32.5rem;
+  padding: 2em;
 }/*# sourceMappingURL=main.css.map */
