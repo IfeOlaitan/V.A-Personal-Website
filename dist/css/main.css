@@ -15,6 +15,7 @@ html {
 body {
   font-family: "Proza Libre", sans-serif;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -26,11 +27,28 @@ header {
 header .logo {
   width: 5rem;
 }
+@media only screen and (min-width: 47.88em) {
+  header .logo {
+    width: 6.5rem;
+  }
+}
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2.25em 2.25em;
+}
+@media only screen and (min-width: 47.88em) {
+  header .container {
+    padding: 3em 5em;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (min-width: 47.88em) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .list {
@@ -41,31 +59,84 @@ header .container {
   height: 100vh;
   width: 55%;
   padding: 2em;
-  transition: all 0.2s ease-in-out;
+}
+@media only screen and (min-width: 47.88em) {
+  .list {
+    position: unset;
+    padding: 0;
+    height: auto;
+    width: auto;
+    color: #ffffff;
+    display: flex;
+    z-index: 10;
+    background: none;
+  }
 }
 .list .close {
   margin-top: 1rem;
   margin-bottom: 5rem;
 }
+@media only screen and (min-width: 47.88em) {
+  .list .close {
+    display: none;
+  }
+}
 .list__item {
   list-style: none;
   margin-bottom: 2.5rem;
+}
+@media only screen and (min-width: 47.88em) {
+  .list__item {
+    margin: 0;
+  }
 }
 .list__link {
   text-decoration: none;
   font-size: 1.4rem;
   color: #17152A;
+  transition: all 0.2s ease-in-out;
+}
+.list__link:hover {
+  filter: brightness(0.9);
+}
+@media only screen and (min-width: 47.88em) {
+  .list__link {
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding-right: 1em;
+  }
 }
 .list .social-icons {
   margin-top: 1rem;
+}
+@media only screen and (min-width: 47.88em) {
+  .list .social-icons {
+    margin: 0;
+    padding-left: 8em;
+  }
 }
 .list .social-icons a {
   text-decoration: none;
   font-size: 1.85rem;
   color: #17152A;
+  transition: all 0.2s ease-in-out;
+}
+.list .social-icons a:hover {
+  filter: brightness(0.9);
+}
+@media only screen and (min-width: 47.88em) {
+  .list .social-icons a {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
 }
 .list .social-icons a i {
   padding-right: 0.7em;
+}
+@media only screen and (min-width: 47.88em) {
+  .list .social-icons a i {
+    padding-right: 0.6em;
+  }
 }
 
 .show {
@@ -82,6 +153,14 @@ header .container {
   display: flex;
   justify-content: center;
 }
+@media only screen and (min-width: 67.5em) {
+  .hero {
+    background-image: url(../img/back-large.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+  }
+}
 .hero .container {
   margin: 2rem auto;
   display: flex;
@@ -91,20 +170,40 @@ header .container {
   width: 100%;
   height: 100%;
 }
+@media only screen and (min-width: 67.5em) {
+  .hero .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .hero .hero-img {
   width: 70%;
   max-width: 30rem;
-  position: relative;
 }
-.hero .hero-img::before {
-  content: "";
-  position: absolute;
+@media only screen and (min-width: 47.88em) {
+  .hero .hero-img {
+    max-width: 35rem;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  .hero .hero-img {
+    width: 80%;
+    margin-right: 7.5rem;
+    max-width: 40rem;
+  }
 }
 .hero .hero-box {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+@media only screen and (min-width: 67.5em) {
+  .hero .hero-box {
+    align-items: flex-start;
+    width: 30%;
+  }
 }
 .hero .hero-box .hello {
   display: flex;
@@ -118,8 +217,18 @@ header .container {
   font-family: "Dynalight", cursive;
   margin-right: 1rem;
 }
+@media only screen and (min-width: 67.5em) {
+  .hero .hero-box .hello p {
+    font-size: 5.2em;
+  }
+}
 .hero .hero-box .hello img {
   width: 4rem;
+}
+@media only screen and (min-width: 67.5em) {
+  .hero .hero-box .hello img {
+    width: 5.5rem;
+  }
 }
 .hero .hero-box h2 {
   color: #ffffff;
@@ -127,6 +236,12 @@ header .container {
   line-height: 1;
   text-align: center;
   width: 90%;
+}
+@media only screen and (min-width: 67.5em) {
+  .hero .hero-box h2 {
+    text-align: left;
+    font-size: 6rem;
+  }
 }
 .hero .hero-box .btn {
   text-decoration: none;
@@ -137,10 +252,25 @@ header .container {
   margin: 2.2rem 0;
   border-radius: 0.5em;
   position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.hero .hero-box .btn:hover {
+  filter: brightness(0.9);
+}
+@media only screen and (min-width: 67.5em) {
+  .hero .hero-box .btn {
+    padding: 1.1em 2.9em;
+    margin: 2.5rem 0;
+  }
 }
 
 .about-section {
   margin: 3rem auto;
+}
+@media only screen and (min-width: 67.5em) {
+  .about-section {
+    margin: 6rem auto;
+  }
 }
 .about-section .container {
   margin: 0 2rem;
@@ -149,27 +279,66 @@ header .container {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 67.5em) {
+  .about-section .container {
+    flex-direction: row;
+    margin: 0 10rem;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  .about-section .left-col {
+    width: 60%;
+  }
+}
 .about-section .left-col .head {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.2rem;
 }
+@media only screen and (min-width: 67.5em) {
+  .about-section .left-col .head {
+    justify-content: flex-start;
+  }
+}
 .about-section .left-col .head img {
   width: 2.6rem;
   margin-right: 1rem;
+}
+@media only screen and (min-width: 67.5em) {
+  .about-section .left-col .head img {
+    width: 3.5rem;
+    margin-right: 1.3rem;
+  }
 }
 .about-section .left-col .head h4 {
   font-size: 2rem;
   font-weight: 600;
   margin-top: 5px;
 }
+@media only screen and (min-width: 67.5em) {
+  .about-section .left-col .head h4 {
+    font-size: 3rem;
+  }
+}
 .about-section .left-col .paragraph {
   font-size: 1.4rem;
   text-align: justify;
 }
+@media only screen and (min-width: 67.5em) {
+  .about-section .left-col .paragraph {
+    font-size: 1.55rem;
+    text-align: left;
+  }
+}
 .about-section .right-col {
   max-width: 35rem;
+}
+@media only screen and (min-width: 67.5em) {
+  .about-section .right-col {
+    width: 35%;
+  }
 }
 .about-section .right-col img {
   width: 100%;
@@ -182,9 +351,19 @@ header .container {
 .book-section {
   margin-bottom: 3rem;
 }
+@media only screen and (min-width: 67.5em) {
+  .book-section {
+    margin-bottom: 6rem;
+  }
+}
 .book-section .head {
   background: #17152A;
   margin-bottom: 2rem;
+}
+@media only screen and (min-width: 67.5em) {
+  .book-section .head {
+    margin-bottom: 4rem;
+  }
 }
 .book-section .head h4 {
   font-size: 2rem;
@@ -193,6 +372,13 @@ header .container {
   padding: 1.8rem 2rem;
   text-align: center;
 }
+@media only screen and (min-width: 67.5em) {
+  .book-section .head h4 {
+    text-align: left;
+    padding: 2rem 10rem;
+    font-size: 3rem;
+  }
+}
 .book-section .container {
   margin: 0 2rem;
   display: flex;
@@ -200,11 +386,29 @@ header .container {
   justify-content: center;
   flex-direction: column-reverse;
 }
+@media only screen and (min-width: 67.5em) {
+  .book-section .container {
+    flex-direction: row;
+    margin: 0 10rem;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  .book-section .left-col {
+    width: 48%;
+  }
+}
 .book-section .left-col h5 {
   font-size: 1.65rem;
   color: #17152A;
   margin-bottom: 1rem;
   text-align: center;
+}
+@media only screen and (min-width: 67.5em) {
+  .book-section .left-col h5 {
+    font-size: 2rem;
+    text-align: left;
+  }
 }
 .book-section .left-col .paragraph {
   font-size: 1.4rem;
@@ -213,15 +417,35 @@ header .container {
   padding-bottom: 1rem;
   margin-bottom: 1.2rem;
 }
+@media only screen and (min-width: 67.5em) {
+  .book-section .left-col .paragraph {
+    font-size: 1.55rem;
+    text-align: left;
+    margin-bottom: 1.6rem;
+    padding-bottom: 1.3rem;
+  }
+}
 .book-section .left-col .price {
   font-size: 1.7rem;
   font-weight: 600;
   margin-bottom: 1.3rem;
 }
+@media only screen and (min-width: 67.5em) {
+  .book-section .left-col .price {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+  }
+}
 .book-section .left-col .buy p {
   font-size: 1.55rem;
   color: #17152A;
   margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 67.5em) {
+  .book-section .left-col .buy p {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+  }
 }
 .book-section .left-col .buy a {
   text-decoration: none;
@@ -235,6 +459,23 @@ header .container {
   border-radius: 5px;
   margin-right: 0.3rem;
   margin-bottom: 0.3rem;
+  transition: all 0.2s ease-in-out;
+}
+.book-section .left-col .buy a:hover {
+  filter: brightness(0.9);
+}
+@media only screen and (min-width: 67.5em) {
+  .book-section .left-col .buy a {
+    font-size: 1.55rem;
+    padding: 0.6em 1.1em;
+    margin-right: 0.6rem;
+    margin-bottom: 0.3rem;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  .book-section .right-col {
+    width: 47%;
+  }
 }
 .book-section .right-col img {
   width: 100%;
@@ -250,12 +491,28 @@ header .container {
 .book-review .container {
   margin: 0 2rem;
 }
+@media only screen and (min-width: 67.5em) {
+  .book-review .container {
+    margin: 0 3.5rem;
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  .book-review ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .book-review h4 {
   font-size: 2.25rem;
   font-weight: 600;
   color: #17152A;
   text-align: center;
   margin-bottom: 5.5rem;
+}
+@media only screen and (min-width: 67.5em) {
+  .book-review h4 {
+    margin-bottom: 7rem;
+  }
 }
 .book-review li {
   background: #17152A;
@@ -269,15 +526,34 @@ header .container {
   -webkit-box-shadow: -8px 18px 39px -5px rgba(0, 0, 0, 0.37);
   -moz-box-shadow: -8px 18px 39px -5px rgba(0, 0, 0, 0.37);
 }
+@media only screen and (min-width: 67.5em) {
+  .book-review li {
+    width: 36rem;
+    padding: 1.5em;
+  }
+}
 .book-review li img {
   width: 7em;
   height: 7em;
   border-radius: 50%;
   margin-top: -4.5em;
 }
+@media only screen and (min-width: 67.5em) {
+  .book-review li img {
+    width: 9em;
+    height: 9em;
+    margin-top: -5em;
+  }
+}
 .book-review li blockquote {
   font-size: 1.3rem;
   margin-bottom: 1rem;
+}
+@media only screen and (min-width: 67.5em) {
+  .book-review li blockquote {
+    font-size: 1.35rem;
+    margin-top: 1rem;
+  }
 }
 .book-review li i {
   color: #C5C2E9;
@@ -291,9 +567,23 @@ header .container {
 .contact-section {
   margin: 0 auto;
 }
+@media only screen and (min-width: 67.5em) {
+  .contact-section {
+    margin: 6rem;
+  }
+}
 .contact-section .container {
   display: flex;
   flex-direction: column;
+}
+@media only screen and (min-width: 67.5em) {
+  .contact-section .container {
+    flex-direction: row;
+    width: 100%;
+    box-shadow: -8px 18px 39px -5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: -8px 18px 39px -5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -8px 18px 39px -5px rgba(0, 0, 0, 0.15);
+  }
 }
 .contact-section .container .left-col {
   background: #F1F8F8;
@@ -303,14 +593,32 @@ header .container {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 67.5em) {
+  .contact-section .container .left-col {
+    width: 45%;
+    align-items: flex-start;
+  }
+}
 .contact-section .container .left-col h1 {
   color: #1F4E5F;
   font-size: 2.8rem;
   margin-bottom: 2.5rem;
   text-align: center;
 }
+@media only screen and (min-width: 67.5em) {
+  .contact-section .container .left-col h1 {
+    text-align: left;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+}
 .contact-section .container .left-col h1 img {
   width: 2rem;
+}
+@media only screen and (min-width: 67.5em) {
+  .contact-section .container .left-col h1 img {
+    width: 3rem;
+  }
 }
 .contact-section .container .left-col a {
   background: #39537B;
@@ -319,6 +627,16 @@ header .container {
   padding: 0.6em 1em;
   text-decoration: none;
   border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.contact-section .container .left-col a:hover {
+  filter: brightness(0.9);
+}
+@media only screen and (min-width: 67.5em) {
+  .contact-section .container .left-col a {
+    font-size: 1.5rem;
+    padding: 0.9em 1.2em;
+  }
 }
 .contact-section .container .right-col {
   background: #2F2B54;
@@ -327,10 +645,25 @@ header .container {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 67.5em) {
+  .contact-section .container .right-col {
+    flex-direction: row;
+    justify-content: center;
+    width: 65%;
+  }
+}
 .contact-section .container .right-col img {
   width: 70%;
   max-width: 32rem;
   margin: 2rem 0;
+}
+@media only screen and (min-width: 67.5em) {
+  .contact-section .container .right-col img {
+    max-width: 25rem;
+  }
+  .contact-section .container .right-col img:not(:last-child) {
+    margin-right: 5rem;
+  }
 }
 
 .footer {
@@ -347,9 +680,18 @@ header .container {
   font-size: 1.85rem;
   margin: 1.8rem;
 }
+@media only screen and (min-width: 67.5em) {
+  .footer .container .socials {
+    font-size: 2rem;
+  }
+}
 .footer .container .socials a {
   text-decoration: none;
   color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+.footer .container .socials a:hover {
+  filter: brightness(0.9);
 }
 .footer .container .socials a i {
   padding: 0.4em;
@@ -357,9 +699,22 @@ header .container {
 .footer .container .copy {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  text-align: center;
+}
+@media only screen and (min-width: 67.5em) {
+  .footer .container .copy {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
 }
 .footer .container .dev {
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
   color: #C5C2E9;
+}
+@media only screen and (min-width: 67.5em) {
+  .footer .container .dev {
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

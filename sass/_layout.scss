@@ -6,6 +6,10 @@ header {
 
     .logo {
         width: 5rem;
+
+        @media only screen and (min-width: $tablet) {
+            width: 6.5rem;
+        }
     }
 
     .container {
@@ -13,6 +17,17 @@ header {
         align-items: center;
         justify-content: space-between;
         padding: 2.25em 2.25em;
+
+        @media only screen and (min-width: $tablet) {
+            padding: 3em 5em;
+            align-items: flex-end;
+        }
+    }
+}
+
+.mobile-menu {
+    @media only screen and (min-width: $tablet) {
+        display: none;
     }
 }
 
@@ -24,34 +39,87 @@ header {
     height: 100vh;
     width: 55%;
     padding: 2em;
-    transition: all .2s ease-in-out;
+
+    @media only screen and (min-width: $tablet) {
+        position: unset;
+        padding: 0;
+        height: auto;
+        width: auto;
+        color: $white;
+        display: flex;
+        z-index: 10;
+        background: none;
+    }
 
     .close {
         margin-top: 1rem;
         margin-bottom: 5rem;
+
+        @media only screen and (min-width: $tablet) {
+            display: none;
+        }
     }
 
     &__item {
         list-style: none;
         margin-bottom: 2.5rem;
+
+        @media only screen and (min-width: $tablet) {
+            margin: 0;
+        }
     }
 
     &__link {
         text-decoration: none;
         font-size: 1.4rem;
         color: $primary-color;
+
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            filter: brightness(.9);
+        }
+
+
+        @media only screen and (min-width: $tablet) {
+            font-size: 1.6rem;
+            color: $white;
+            padding-right: 1em;
+        }
     }
 
     .social-icons {
         margin-top: 1rem;
+
+        @media only screen and (min-width: $tablet) {
+            margin: 0;
+            padding-left: 8em;
+        }
         
         a {
             text-decoration: none;
             font-size: 1.85rem;
             color: $primary-color;
 
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                filter: brightness(.9);
+            }
+
+
+            @media only screen and (min-width: $tablet) {
+                font-size: 1.5rem;
+                color: $white;
+            }
+
             i {
                 padding-right: .7em;
+
+                
+                @media only screen and (min-width: $tablet) {
+                    padding-right: .6em;
+                }
             }
         }
     }
@@ -72,6 +140,13 @@ header {
     display: flex;
     justify-content: center;
 
+    @media only screen and (min-width: $small-screen) {
+        background-image: url(../img/back-large.png);
+        background-size: cover;
+        background-position: center;
+        justify-content: space-around;
+    }
+
     .container {
         margin: 2rem auto;
         display: flex;
@@ -80,16 +155,27 @@ header {
         justify-content: center;
         width: 100%;
         height: 100%;
+
+        @media only screen and (min-width: $small-screen) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
     }
+
 
     .hero-img {
         width: 70%;
         max-width: 30rem;
-        position: relative;
 
-        &::before {
-            content: '';
-            position: absolute;
+        @media only screen and (min-width: $tablet) {
+            max-width: 35rem;
+        }
+
+        @media only screen and (min-width: $small-screen) {
+            width: 80%;
+            margin-right: 7.5rem;
+            max-width: 40rem;
         }
     }
 
@@ -98,6 +184,11 @@ header {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
+        @media only screen and (min-width: $small-screen) {
+            align-items: flex-start;
+            width: 30%;
+        }
 
         .hello {
             display: flex;
@@ -110,10 +201,18 @@ header {
                 line-height: 1;
                 font-family: 'Dynalight', cursive;
                 margin-right: 1rem;
+
+                @media only screen and (min-width: $small-screen) {
+                    font-size: 5.2em;
+                }
             }
 
             img {
                 width: 4rem;
+
+                @media only screen and (min-width: $small-screen) {
+                    width: 5.5rem;
+                }
             }
         }
 
@@ -123,6 +222,11 @@ header {
             line-height: 1;
             text-align: center;
             width: 90%;
+
+            @media only screen and (min-width: $small-screen) {
+                text-align: left;
+                font-size: 6rem;
+            }
         }
 
         .btn {
@@ -134,6 +238,16 @@ header {
             margin: 2.2rem 0;
             border-radius: .5em;
             position: relative;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                filter: brightness(.9);
+            }
+
+            @media only screen and (min-width: $small-screen) {
+                padding: 1.1em 2.9em;
+                margin: 2.5rem 0;
+            }
         }
     }
 }
@@ -143,15 +257,28 @@ header {
 .about-section {
     margin: 3rem auto;
 
-    .container {
+    @media only screen and (min-width: $small-screen) {
+        margin: 6rem auto;
+     }
+
+    .container { 
         margin: 0 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (min-width: $small-screen) {
+            flex-direction: row;
+            margin: 0 10rem;
+            justify-content: space-between;
+        }
     }
 
     .left-col {
+        @media only screen and (min-width: $small-screen) {
+            width: 60%;
+        }
 
         .head {
             display: flex;
@@ -159,26 +286,50 @@ header {
             justify-content: center;
             margin-bottom: 1.2rem;
 
+            @media only screen and (min-width: $small-screen) {
+                justify-content: flex-start;
+            }
+
             img {
                 width: 2.6rem;
                 margin-right: 1rem;
+
+                
+                @media only screen and (min-width: $small-screen) {
+                    width: 3.5rem;
+                    margin-right: 1.3rem;
+                }
             }
     
             h4 {
                 font-size: 2rem;
                 font-weight: 600;
                 margin-top: 5px;
+
+                       
+                @media only screen and (min-width: $small-screen) {
+                    font-size: 3rem;
+                }
             }
         }
 
         .paragraph{
             font-size: 1.4rem;
             text-align: justify;
+
+            @media only screen and (min-width: $small-screen) {
+                font-size: 1.55rem;
+                text-align: left;
+            }
         }
     }
 
     .right-col {
         max-width: 35rem;
+
+        @media only screen and (min-width: $small-screen) {
+            width: 35%;
+        }
 
         img {
             width: 100%;
@@ -193,10 +344,18 @@ header {
 //Book Section
 .book-section {
     margin-bottom: 3rem;
+
+    @media only screen and (min-width: $small-screen) {
+        margin-bottom: 6rem;
+     }
     
     .head {
         background: $primary-color;
         margin-bottom: 2rem;
+
+        @media only screen and (min-width: $small-screen) {
+            margin-bottom: 4rem;
+         }
 
         h4 {
             font-size: 2rem;
@@ -204,6 +363,12 @@ header {
             color: $white;
             padding: 1.8rem 2rem;
             text-align: center;
+
+            @media only screen and (min-width: $small-screen) {
+                text-align: left;
+                padding: 2rem 10rem;
+                font-size: 3rem;
+            }
         }
     }
 
@@ -213,16 +378,31 @@ header {
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
+
+        @media only screen and (min-width: $small-screen) {
+            flex-direction: row;
+            margin: 0 10rem;
+            justify-content: space-between;
+        }
     }
 
     .left-col {
-        //width: 45%;
+
+        
+        @media only screen and (min-width: $small-screen) {
+           width: 48%;
+        }
 
         h5 {
             font-size: 1.65rem;
             color: $primary-color;
             margin-bottom: 1rem;
             text-align: center;
+
+            @media only screen and (min-width: $small-screen) {
+                font-size: 2rem;
+                text-align: left;
+             }
         }
 
         .paragraph{
@@ -231,12 +411,24 @@ header {
             border-bottom: 2px solid #FFA400;
             padding-bottom: 1rem;
             margin-bottom: 1.2rem;
+
+            @media only screen and (min-width: $small-screen) {
+                font-size: 1.55rem;
+                text-align: left;
+                margin-bottom: 1.6rem;
+                padding-bottom: 1.3rem;
+             }
         }
 
         .price {
             font-size: 1.7rem;
             font-weight: 600;
             margin-bottom: 1.3rem;
+
+            @media only screen and (min-width: $small-screen) {
+                font-size: 1.9rem;
+                margin-bottom: 1.5rem;
+             }
         }
 
         .buy {
@@ -245,7 +437,11 @@ header {
                 font-size: 1.55rem;
                 color: $primary-color;
                 margin-bottom: .5rem;
-                //&#8594;
+
+                @media only screen and (min-width: $small-screen) {
+                    font-size: 1.7rem;
+                    margin-bottom: .8rem;
+                 }
             }
 
             a {
@@ -260,11 +456,29 @@ header {
                 border-radius: 5px;
                 margin-right: .3rem;
                 margin-bottom: .3rem;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    filter: brightness(.9);
+                }
+    
+
+                @media only screen and (min-width: $small-screen) {
+                    font-size: 1.55rem;
+                    padding: .6em 1.1em;
+                    margin-right: .6rem;
+                    margin-bottom: .3rem;
+                 }
             }
         }
     }
 
     .right-col {
+
+        @media only screen and (min-width: $small-screen) {
+            width: 47%;
+         }
+ 
 
         img {
             width: 100%;
@@ -282,6 +496,18 @@ header {
 
     .container {
         margin: 0 2rem;
+    
+        @media only screen and (min-width: $small-screen) {
+            margin: 0 3.5rem;
+         }
+    }
+
+    ul {
+
+        @media only screen and (min-width: $small-screen) {
+            display: flex;
+            justify-content: space-between;
+         }
     }
 
     h4 {
@@ -290,6 +516,10 @@ header {
         color: $primary-color;
         text-align: center;
         margin-bottom: 5.5rem;
+
+        @media only screen and (min-width: $small-screen) {
+            margin-bottom: 7rem;
+         }
     }
 
     li {
@@ -304,17 +534,32 @@ header {
         -webkit-box-shadow: -8px 18px 39px -5px rgba(0,0,0,0.37);
         -moz-box-shadow: -8px 18px 39px -5px rgba(0,0,0,0.37);
 
+        @media only screen and (min-width: $small-screen) {
+            width: 36rem;
+            padding: 1.5em;
+         }
 
         img {
             width: 7em;
             height: 7em;
             border-radius: 50%;
             margin-top: -4.5em;
+
+            @media only screen and (min-width: $small-screen) {
+                width: 9em;
+                height: 9em;
+                margin-top: -5em;
+             }
         }
 
         blockquote {
             font-size: 1.3rem;
             margin-bottom: 1rem;
+
+            @media only screen and (min-width: $small-screen) {
+                font-size: 1.35rem;
+                margin-top: 1rem;
+             }
         }
 
         i {
@@ -333,10 +578,21 @@ header {
 .contact-section {
     margin: 0 auto;
 
+    @media only screen and (min-width: $small-screen) {
+        margin: 6rem;
+     }
+
     .container {
-        //margin: 0 4rem;
         display: flex;
         flex-direction: column;
+
+        @media only screen and (min-width: $small-screen) {
+            flex-direction: row;
+            width: 100%;
+            box-shadow: -8px 18px 39px -5px rgba(0,0,0,0.15);
+            -webkit-box-shadow: -8px 18px 39px -5px rgba(0,0,0,0.15);
+            -moz-box-shadow: -8px 18px 39px -5px rgba(0,0,0,0.15);
+         }
 
         .left-col {
             background: #F1F8F8;
@@ -346,14 +602,29 @@ header {
             justify-content: center;
             align-items: center;
 
+            @media only screen and (min-width: $small-screen) {
+                width: 45%;
+                align-items: flex-start;
+             }
+
             h1 {
                 color: #1F4E5F;
                 font-size: 2.8rem;
                 margin-bottom: 2.5rem;
                 text-align: center;
 
+                @media only screen and (min-width: $small-screen) {
+                    text-align: left;
+                    font-size: 3.5rem;
+                    margin-bottom: 3rem;
+                 }
+
                 img {
                     width: 2rem;
+
+                    @media only screen and (min-width: $small-screen) {
+                       width: 3rem;
+                     }
                 }
             }
 
@@ -364,6 +635,16 @@ header {
                 padding: .6em 1em;
                 text-decoration: none;
                 border-radius: 8px;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    filter: brightness(.9);
+                }
+
+                @media only screen and (min-width: $small-screen) {
+                    font-size: 1.5rem;
+                    padding: .9em 1.2em;
+                 }
             }
         }
 
@@ -375,11 +656,25 @@ header {
             justify-content: center;
             align-items: center;
 
+            @media only screen and (min-width: $small-screen) {
+                flex-direction: row;
+                justify-content: center;
+                width: 65%;
+             }
+
 
             img {
                 width: 70%;
                 max-width: 32rem;
                 margin: 2rem 0;
+
+                @media only screen and (min-width: $small-screen) {
+                    max-width: 25rem;
+
+                    &:not(:last-child) {
+                        margin-right: 5rem;
+                    }
+                 }
             }
         }
     }
@@ -399,25 +694,46 @@ header {
             font-size: 1.85rem;
             margin: 1.8rem;
 
-            a {
-                text-decoration: none;
-                color: #ffffff;
+            @media only screen and (min-width: $small-screen) {
+                font-size: 2rem;
+             }
 
-                i {
-                    padding: .4em;
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        filter: brightness(.9);
+                    }
+    
+
+                    i {
+                        padding: .4em;
+                    }
                 }
-            }
             }
 
         .copy {
             font-size: 1.3rem;
             margin-bottom: .5rem;
+            text-align: center;
+
+            @media only screen and (min-width: $small-screen) {
+                font-size: 1.4rem;
+                margin-bottom: .8rem;
+             }
         }
 
         .dev {
             font-size: 1.1rem;
             margin-bottom: .8rem;
             color: #C5C2E9;
+
+            @media only screen and (min-width: $small-screen) {
+                font-size: 1.2em;
+                margin-bottom: 1rem;
+             }
         }
     }
 }

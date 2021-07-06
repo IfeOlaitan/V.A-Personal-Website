@@ -5,6 +5,10 @@ $secondary-color: #79A8A9;
 $black: #16161D;
 $white: #ffffff;
 
+//Breakpoints
+$tablet: 47.88em; //767px
+$small-screen: 67.5em; //1080px
+$large-screen: 90.63em; //1450px
 
 *,
 *::before,
@@ -23,4 +27,5 @@ html {
 body {
     font-family: 'Proza Libre', sans-serif;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
