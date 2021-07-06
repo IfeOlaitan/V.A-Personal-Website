@@ -367,13 +367,18 @@ header {
         align-items: center;
 
         .socials {
-            font-size: 1.8rem;
+            font-size: 1.85rem;
             margin: 1.8rem;
 
-            i {
-                padding: .3em;
+            a {
+                text-decoration: none;
+                color: #ffffff;
+
+                i {
+                    padding: .4em;
+                }
             }
-        }
+            }
 
         .copy {
             font-size: 1.3rem;

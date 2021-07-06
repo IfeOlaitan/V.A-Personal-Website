@@ -319,11 +319,15 @@ header .container {
   align-items: center;
 }
 .footer .container .socials {
-  font-size: 1.8rem;
+  font-size: 1.85rem;
   margin: 1.8rem;
 }
-.footer .container .socials i {
-  padding: 0.3em;
+.footer .container .socials a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer .container .socials a i {
+  padding: 0.4em;
 }
 .footer .container .copy {
   font-size: 1.3rem;
