@@ -244,7 +244,7 @@ header {
 
 //Book Review
 .book-review {
-    margin: 4rem 0;
+    margin: 4rem 0 0 0;
     padding: 3em 0 .8em 0;
     background: #F2F1FA;
 
@@ -301,12 +301,13 @@ header {
 .contact-section {
 
     .container {
+        //padding: 0 2rem;
         display: flex;
         flex-direction: column;
 
         .left-col {
             background: #F1F8F8;
-            padding: 4em;
+            padding: 8em 4em;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -344,8 +345,8 @@ header {
 
             img {
                 width: 70%;
-                max-width: 32.5rem;
-                padding: 2em;
+                max-width: 32rem;
+                margin: 2rem 0;
             }
         }
     }

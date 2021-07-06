@@ -215,7 +215,7 @@ header .container {
 }
 
 .book-review {
-  margin: 4rem 0;
+  margin: 4rem 0 0 0;
   padding: 3em 0 0.8em 0;
   background: #F2F1FA;
 }
@@ -266,7 +266,7 @@ header .container {
 }
 .contact-section .container .left-col {
   background: #F1F8F8;
-  padding: 4em;
+  padding: 8em 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,6 +298,6 @@ header .container {
 }
 .contact-section .container .right-col img {
   width: 70%;
-  max-width: 32.5rem;
-  padding: 2em;
+  max-width: 32rem;
+  margin: 2rem 0;
 }/*# sourceMappingURL=main.css.map */
