@@ -21,6 +21,7 @@ header {
   background-color: #17152A;
   height: auto;
   z-index: 3;
+  position: relative;
 }
 header .logo {
   width: 5rem;
@@ -33,15 +34,42 @@ header .container {
 }
 
 .list {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: -60%;
+  background: #ffffff;
+  height: 100vh;
+  width: 55%;
+  padding: 2em;
+  transition: all 0.2s ease-in-out;
+}
+.list .close {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 .list__item {
   list-style: none;
+  margin-bottom: 2.5rem;
 }
 .list__link {
   text-decoration: none;
-  color: #ffffff;
   font-size: 1.4rem;
+  color: #17152A;
+}
+.list .social-icons {
+  margin-top: 1rem;
+}
+.list .social-icons a {
+  text-decoration: none;
+  font-size: 1.85rem;
+  color: #17152A;
+}
+.list .social-icons a i {
+  padding-right: 0.7em;
+}
+
+.show {
+  right: 0;
 }
 
 .hero {
@@ -262,9 +290,6 @@ header .container {
 
 .contact-section {
   margin: 0 auto;
-  box-shadow: -5px 7px 56px -28px rgba(0, 0, 0, 0.65);
-  -webkit-box-shadow: -5px 7px 56px -28px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: -5px 7px 56px -28px rgba(0, 0, 0, 0.65);
 }
 .contact-section .container {
   display: flex;
@@ -291,7 +316,7 @@ header .container {
   background: #39537B;
   color: #ffffff;
   font-size: 1.3rem;
-  padding: 0.6em 0.9em;
+  padding: 0.6em 1em;
   text-decoration: none;
   border-radius: 8px;
 }
