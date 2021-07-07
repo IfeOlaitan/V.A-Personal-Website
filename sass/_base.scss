@@ -21,12 +21,11 @@ $large-screen: 90.63em; //1450px
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    //color: $black;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Proza Libre', sans-serif;
     line-height: 1.5;
-    scroll-behavior: smooth;
+    max-width: 250rem;
 }

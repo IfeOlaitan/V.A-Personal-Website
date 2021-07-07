@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/main.css">
     <title>Veronica Adeusi</title>
 </head>
@@ -33,9 +33,9 @@
 
      <div class="hero">
          <div class="container">
-                <img src="img/vera.png" alt="Veronica" class="hero-img">
+                <img src="img/vera.png" alt="Veronica" class="hero-img" data-aos="fade-right">
 
-            <div class="hero-box">
+            <div class="hero-box" data-aos="fade-left">
                 <div class="hello">
                     <p>hello</p>
                     <img src="img/hello.svg" alt="hello emoji">
@@ -48,7 +48,7 @@
 
      <section class="about-section" id="about">
          <div class="container">
-            <div class="left-col">
+            <div class="left-col" data-aos="fade-up">
                 <div class="head">
                     <img src="img/star.svg" alt="Star">
                     <h4>About Veronica</h4>
@@ -61,17 +61,17 @@
              </div>
              
              <div class="right-col">
-                 <img src="img/vera-about.png" alt="Veronica">
+                 <img src="img/vera-about.png" alt="Veronica" data-aos="fade-up">
              </div>
          </div>
      </section>
 
      <section class="book-section" id="book">
          <div class="head">
-             <h4>Veronica’s New Book</h4>
+             <h4 data-aos="fade-right">Veronica’s New Book</h4>
          </div>
          <div class="container">
-             <div class="left-col">
+             <div class="left-col" data-aos="fade-up">
                  <h5>FINDING THE SILVER LINING</h5>
                  <p class="paragraph">
                     In finding yourself, you need to be prepared for the good, the bad and the ugly that life will throw at you because it wouldn’t just be as a bed of roses or the walk in the park that you wish it would be. With this in mind, there is need to understand that after dark clouds and heavy rain, there is usually that beautiful ray of light, that of hope and remembrance that whatever happened prior is for the good to be revealed.
@@ -87,7 +87,7 @@
                  </div>
              </div>
 
-             <div class="right-col">
+             <div class="right-col" data-aos="fade-up">
                  <img src="img/book.png" alt="Book">
              </div>
          </div>
@@ -95,10 +95,10 @@
 
     <section class="book-review">
         <div class="container">
-            <h4>Book Reviews</h4>
+            <h4 data-aos="fade-up">Book Reviews</h4>
 
             <ul>
-                <li>
+                <li data-aos="fade-up">
                     <img src="img/doctor.jpeg">
                     <blockquote>Every cloud they say, has a silver lining. However, it is one thing to know there is a silver lining, and another thing to identify the lining. Juxtaposing personal life stories with accompanying life lessons, using carefully-chosen words that paint pictures that can be visualized, Adeusi Veronica in this book has brought out unambiguously, ways to identify the silver linings in every cloud stemming from life's jabs.
                     Are you tired of complaining and you want to start building with the bricks life throws at you? Then this book is your surest bet!!!</blockquote>
@@ -106,7 +106,7 @@
                     <i>Medical Student</i>
                 </li>
 
-                <li>
+                <li data-aos="fade-up">
                     <img src="img/coach.png">
                     <blockquote>Veronica did a great job with her book and I am very impressed. The stories are very inspiring, thought-provoking and hands-on. She went all vulnerable sharing lessons from her personal experiences, and that alone is very courageous and commendable!</blockquote>
                     <p>Coach Phebean Amusan (CPCC, CPRW, HRPL, ACIPM)</p>
@@ -114,7 +114,7 @@
                 </li>
 
 
-                <li>
+                <li data-aos="fade-up">
                     <img src="img/adebola.png">
                     <blockquote>
                         Veronica will - with this masterpiece – change career and life trajectories positively. It is exactly what young career men and women need today – matter-of-factly. This much-needed book provides clarity and insights into how we as individuals can make our career a huge success and make life a fulfilling one. It is inspiring, empowering, and immediately useful. Everyone should make out time to read this book. It is ‘unputdownable’!!
@@ -128,13 +128,13 @@
 
     <div class="contact-section" id="contact">
         <div class="container">
-            <div class="left-col">
+            <div class="left-col" data-aos="fade-right">
                 <h1>I'd <img src="img/love.svg" alt="love"> to hear from you.</h1>
                 <a href="mailto:chatswithveronica@gmail.com?subject=Hi Veronica"class="email">Send me an email</a>
             </div>
             <div class="right-col">
-                <img src="img/vera-2.png" alt="Veronica">
-                <img src="img/vera-3.png" alt="Veronica">
+                <img src="img/vera-2.png" alt="Veronica" data-aos="zoom-in">
+                <img src="img/vera-3.png" alt="Veronica" data-aos="zoom-in">
             </div>
         </div>
     </div>
@@ -153,6 +153,13 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/1194a5d092.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 170,
+          duration: 900
+      });
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>

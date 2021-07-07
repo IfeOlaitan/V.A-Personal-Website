@@ -16,7 +16,7 @@ html {
 body {
   font-family: "Proza Libre", sans-serif;
   line-height: 1.5;
-  scroll-behavior: smooth;
+  max-width: 250rem;
 }
 
 header {
