@@ -73,8 +73,8 @@ header {
         text-decoration: none;
         font-size: 1.4rem;
         color: $primary-color;
-
         transition: all .2s ease-in-out;
+        -webkit-tap-highlight-color: transparent;
 
         &:hover {
             filter: brightness(.9);
@@ -100,8 +100,8 @@ header {
             text-decoration: none;
             font-size: 1.85rem;
             color: $primary-color;
-
             transition: all .2s ease-in-out;
+            -webkit-tap-highlight-color: transparent;
 
             &:hover {
                 filter: brightness(.9);
@@ -239,6 +239,7 @@ header {
             border-radius: .5em;
             position: relative;
             transition: all .2s ease-in-out;
+            -webkit-tap-highlight-color: transparent;
 
             &:hover {
                 filter: brightness(.9);
@@ -457,6 +458,7 @@ header {
                 margin-right: .3rem;
                 margin-bottom: .3rem;
                 transition: all .2s ease-in-out;
+                -webkit-tap-highlight-color: transparent;
 
                 &:hover {
                     filter: brightness(.9);
@@ -636,6 +638,7 @@ header {
                 text-decoration: none;
                 border-radius: 8px;
                 transition: all .2s ease-in-out;
+                -webkit-tap-highlight-color: transparent;
 
                 &:hover {
                     filter: brightness(.9);
@@ -702,6 +705,7 @@ header {
                     text-decoration: none;
                     color: #ffffff;
                     transition: all .2s ease-in-out;
+                    -webkit-tap-highlight-color: transparent;
 
                     &:hover {
                         filter: brightness(.9);
